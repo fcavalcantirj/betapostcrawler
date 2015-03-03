@@ -10,7 +10,7 @@ fbconsole.authenticate()
 
 uniqueIdArray = []
 count = 0;
-threshhold = 100;
+threshold = 100;
 
 for post in iter_pages(fbconsole.get('/'+targetId+'/posts')):
 	try:
@@ -20,10 +20,10 @@ for post in iter_pages(fbconsole.get('/'+targetId+'/posts')):
 	    	if not any(id in s for s in uniqueIdArray):
 	    		count+=1
 	    		uniqueIdArray.append(id)
-	    		print "fetched " + str(count) + " of " + str(threshhold) + " - " + name +"@"+ id
+	    		print "fetched " + str(count) + " of " + str(threshold) + " - " + name +"@"+ id
 	except KeyError as e:
 	    print "KeyError error({0})".format(e)
-	if count >= threshhold: break
+	if count >= threshold: break
 
 time = time.strftime("%H_%M_%S")
 
