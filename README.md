@@ -4,9 +4,12 @@ This script generates a file with facebook ID`s of people that has liked/comment
 
 ### Basic Usage ###
 
-Just change the variables;--
-targetId (any facebook page id)--
+Just change the variables;
+
+targetId (any facebook page id)
+
 initialDate/until
+
 threshold (max number of facebook id`s)
 
 ### More Authentication Options ###
