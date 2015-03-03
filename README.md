@@ -1,6 +1,6 @@
 # betapostcrawler
 
-This script iterates through the likes/comments of a given facebook page and will generate a text file with a <b>unique list facebook id`s</b>. The output is ready to be imported from facebook ads manager to create custom audience.
+This script iterates through the posts of a given facebook page and will generate a text file containing a list of <b>unique list facebook id`s</b> who liked the posts. The output is ready to be imported from facebook ads manager to create custom audience.
 
 ### Basic Usage - just change the variables ###
 
