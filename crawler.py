@@ -12,6 +12,7 @@ def add_months(sourcedate,months):
 	return datetime.date(year,month,day)
 
 fbconsole.APP_ID = '989682727717174'
+#targetId = '241897672509479'MEU RIO
 targetId = '359317787470519'
 
 fbconsole.AUTH_SCOPE = ['']
@@ -21,8 +22,8 @@ uniqueIdArray = []
 count = 0;
 threshold = 50000;
 
-initialDate = datetime.datetime.strptime('2012-01-01', '%Y-%m-%d').date()
-until = datetime.datetime.strptime('2012-12-01', '%Y-%m-%d').date()
+initialDate = datetime.datetime.strptime('2011-01-01', '%Y-%m-%d').date()
+until = datetime.datetime.strptime('2011-12-01', '%Y-%m-%d').date()
 
 while count < threshold:
 	print "from=["+str(initialDate)+"].until=["+str(until)+"]"
@@ -37,6 +38,9 @@ while count < threshold:
 		    		print "fetched " + str(count) + " of " + str(threshold) + " - " + name +"@"+ id
 		except KeyError as e:
 		    print "KeyError error({0})".format(e)
+		except fbconsole.OAuthException as o:
+			print "OAuthException ({0})".format(o)
+			fbconsole.authenticate()
 	initialDate = until
 	until = add_months(until,1)
 	if until >= datetime.datetime.now().date():
@@ -44,7 +48,7 @@ while count < threshold:
 
 time = time.strftime("%H_%M_%S")
 
-file = open("fbids_"+str(time)+".txt", "w")
+file = open("fbids_"+targetId+"_"+str(time)+".txt", "w")
 
 for id in uniqueIdArray:
 	file.write(id+"\n")
