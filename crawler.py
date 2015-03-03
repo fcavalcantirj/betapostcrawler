@@ -11,8 +11,13 @@ def add_months(sourcedate,months):
 	day = min(sourcedate.day,calendar.monthrange(year,month)[1])
 	return datetime.date(year,month,day)
 
+#beta_posts_crawler
 fbconsole.APP_ID = '989682727717174'
-#targetId = '241897672509479'MEU RIO
+
+#MEU RIO
+#targetId = '241897672509479'
+
+#WazeBr
 targetId = '359317787470519'
 
 fbconsole.AUTH_SCOPE = ['']
