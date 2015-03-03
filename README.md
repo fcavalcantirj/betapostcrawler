@@ -2,13 +2,12 @@
 
 This script generates a file with facebook ID`s of people that has liked/commented on the page you want to target.
 
-Basic Usage:
+### Basic Usage ###
 
-Configure threshold (number of ID`s) and targetId (any page id)
-
-How to get facebook page id:
-
-http://findmyfacebookid.com/
+Just change the variables;
+targetId (any facebook page id)
+initialDate/until
+threshold (max number of facebook id`s)
 
 ### More Authentication Options ###
 
@@ -23,3 +22,7 @@ For the authentication flow to work, you must configure your Facebook
 application correctly by setting the "Site URL" option to http://local.fbconsole.com:8080
 
 Any doubts on fbconsole please check https://github.com/fbsamples/fbconsole
+
+#### How to get facebook page id ####
+
+http://findmyfacebookid.com/
