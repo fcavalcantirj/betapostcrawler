@@ -1,6 +1,6 @@
 # betapostcrawler
 
-This script generates a text file with <bold>unique</b> facebook ID`s of people that has liked/commented on the page you want to target.
+This script will iterates through the likes/comments of a given facebook page and will generate a text file with a <bold>unique</b> list facebook ID`s. The output is ready to be imported from facebook ads manager to create custom audience.
 
 ### Basic Usage - just change the variables ###
 
