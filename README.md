@@ -12,7 +12,7 @@ http://findmyfacebookid.com/
 
 ### More Authentication Options ###
 
-By default, this script will make all it's requests as the beta­_­p­o­s­t­s­_­c­r­a­wler facebook app.
+By default, this script will make all it's requests as the beta_posts_crawler facebook app.
 If you want the requests to be made by your own facebook application, you must
 modify the APP_ID setting.  For example:
 
