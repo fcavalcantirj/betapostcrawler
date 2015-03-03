@@ -1,12 +1,12 @@
 # betapostcrawler
 
-This script generates a text file with facebook ID`s of people that has liked/commented on the page you want to target.
+This script generates a text file with <bold>unique</b> facebook ID`s of people that has liked/commented on the page you want to target.
 
 ### Basic Usage - just change the variables ###
 
     targetId (any facebook page id)
     initialDate/until
-    threshold (max number of facebook id`s)
+    threshold (max number of unique facebook id`s)
 
 ### More Authentication Options ###
 
