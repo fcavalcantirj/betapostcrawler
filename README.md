@@ -1,6 +1,6 @@
 # betapostcrawler
 
-This script generates a file with facebook ID`s of people that has liked/commented on the page you want to target.
+This script generates a text file with facebook ID`s of people that has liked/commented on the page you want to target.
 
 ### Basic Usage - just change the variables ###
 
